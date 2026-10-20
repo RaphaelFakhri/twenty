@@ -13,7 +13,6 @@ import { DashboardToolProvider } from 'src/engine/core-modules/tool-provider/pro
 import { DatabaseToolProvider } from 'src/engine/core-modules/tool-provider/providers/database-tool.provider';
 import { LogicFunctionToolProvider } from 'src/engine/core-modules/tool-provider/providers/logic-function-tool.provider';
 import { MetadataToolProvider } from 'src/engine/core-modules/tool-provider/providers/metadata-tool.provider';
-import { NavigationMenuItemToolProvider } from 'src/engine/core-modules/tool-provider/providers/navigation-menu-item-tool.provider';
 import { ViewToolProvider } from 'src/engine/core-modules/tool-provider/providers/view-tool.provider';
 import { WebhookToolProvider } from 'src/engine/core-modules/tool-provider/providers/webhook-tool.provider';
 import { WorkflowToolProvider } from 'src/engine/core-modules/tool-provider/providers/workflow-tool.provider';
@@ -26,7 +25,7 @@ import { AiAgentModule } from 'src/engine/metadata-modules/ai/ai-agent/ai-agent.
 import { ApplicationTranslationCatalogModule } from 'src/engine/metadata-modules/application-translation-catalog/application-translation-catalog.module';
 import { FieldMetadataModule } from 'src/engine/metadata-modules/field-metadata/field-metadata.module';
 import { WorkspaceManyOrAllFlatEntityMapsCacheModule } from 'src/engine/metadata-modules/flat-entity/services/workspace-many-or-all-flat-entity-maps-cache.module';
-import { NavigationMenuItemModule } from 'src/engine/metadata-modules/navigation-menu-item/navigation-menu-item.module';
+import { NavigationMenuItemToolsModule } from 'src/engine/metadata-modules/navigation-menu-item/tools/navigation-menu-item-tools.module';
 import { ObjectMetadataModule } from 'src/engine/metadata-modules/object-metadata/object-metadata.module';
 import { PermissionsModule } from 'src/engine/metadata-modules/permissions/permissions.module';
 import { RoleToolsModule } from 'src/engine/metadata-modules/role/tools/role-tools.module';
@@ -65,7 +64,7 @@ import { ToolRegistryService } from './services/tool-registry.service';
     ViewSortModule,
     WorkspaceCacheModule,
     WorkspaceManyOrAllFlatEntityMapsCacheModule,
-    NavigationMenuItemModule,
+    NavigationMenuItemToolsModule,
     WebhookToolsModule,
     RoleToolsModule,
     UserRoleModule,
@@ -84,7 +83,6 @@ import { ToolRegistryService } from './services/tool-registry.service';
     DashboardToolProvider,
     DatabaseToolProvider,
     MetadataToolProvider,
-    NavigationMenuItemToolProvider,
     LogicFunctionToolProvider,
     ViewToolProvider,
     WebhookToolProvider,
@@ -96,7 +94,6 @@ import { ToolRegistryService } from './services/tool-registry.service';
         databaseProvider: DatabaseToolProvider,
         metadataProvider: MetadataToolProvider,
         logicFunctionProvider: LogicFunctionToolProvider,
-        navigationMenuItemProvider: NavigationMenuItemToolProvider,
         viewProvider: ViewToolProvider,
         webhookProvider: WebhookToolProvider,
         workflowProvider: WorkflowToolProvider,
@@ -107,7 +104,6 @@ import { ToolRegistryService } from './services/tool-registry.service';
         databaseProvider,
         metadataProvider,
         logicFunctionProvider,
-        navigationMenuItemProvider,
         viewProvider,
         webhookProvider,
         workflowProvider,
@@ -119,7 +115,6 @@ import { ToolRegistryService } from './services/tool-registry.service';
         DatabaseToolProvider,
         MetadataToolProvider,
         LogicFunctionToolProvider,
-        NavigationMenuItemToolProvider,
         ViewToolProvider,
         WebhookToolProvider,
         WorkflowToolProvider,
